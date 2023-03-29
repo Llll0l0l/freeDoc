@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    margin: 0;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 1.1rem;
+}
+
+body>main {
+    margin: 2.36% 4%;
+}
+
+nav {
+    display: block;
+    height: 100%;
+    position: fixed;
+    border-right: solid rgb(95, 90, 90) 2px;
+    flex-direction: column;
+    overflow: scroll;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    list-style: none;
+    padding: 1em 2em;
+    white-space: nowrap;
+    border: solid rgb(95, 90, 90) 1px;
+    text-align: left;
+}
+
+nav h2 {
+    white-space: nowrap;
+    margin: 0;
+    border: solid rgb(95, 90, 90) 1px;
+    padding: 1em;
+    text-align: center;
+    font-weight: 100;
+    display: block;
+}
+
+nav a {
+    text-decoration: none;
+    color: #303133;
+}
+
+main {
+    color: #303133;
+    /* position: relative; */
+    padding-left: 17em;
+}
+
+@media only screen and (max-width:1200px) {
+    body {}
+}
