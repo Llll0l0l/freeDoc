@@ -3,10 +3,16 @@ body {
     margin: 0;
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 1.1rem;
+    background-color: #f3c88f;
 }
 
-body>main {
+main {
     margin: 2.36% 4%;
+}
+
+main header {
+    font-weight: bold;
+    font-size: 1.5em;
 }
 
 nav {
@@ -50,10 +56,31 @@ nav a {
 
 main {
     color: #303133;
-    /* position: relative; */
     padding-left: 17em;
 }
 
-@media only screen and (max-width:1200px) {
-    body {}
+.code {
+    padding: 15px;
+    margin-left: 0;
+    overflow-wrap: normal;
+    background-color: #d1af82;
+    border-radius: 10px;
+    text-indent: 20px;
+}
+
+@media only screen and (max-width:750px) {
+    body {
+        flex-direction: row;
+    }
+    nav {
+        height: 17em;
+        width: 100%;
+        border: 1px solid black;
+        position: absolute;
+    }
+    main {
+        position: relative;
+        padding-left: 0;
+        margin-top: 17em;
+    }
 }
